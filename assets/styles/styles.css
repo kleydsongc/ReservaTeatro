@@ -1,0 +1,238 @@
+body {								/*Estilização tag body*/
+	margin: 0;						/*define margem a margem como zero*/
+	font-family: arial;
+	font-size: 12;
+	line-height: 1.5;		/*define fonte dos elementos textuais pertencentes */
+	background-color: white;		/**/
+	color: black;
+	text-align: justify;					/**/
+}
+
+.brasao {
+    position: fixed;
+    padding: 0px;
+    background-color: #007c36;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+}
+
+.brasao img {
+    width: 10%;
+}
+
+.navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #007c36;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	font-family: 'Franklin Gothic Medium';
+	z-index: 99;
+}
+
+.navbar li {
+	float: left;
+	width: 25%;
+}
+
+.navbar li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+	color: #f4b719;
+}
+
+.navbar li a.active {
+	background-color: #f4b719;
+	color: black;
+}
+
+h1 {
+	margin-top: 65px;
+	text-align: center;
+	font-size: 45px;
+}
+
+h2 {
+	text-align: center;
+	font-family: 'Franklin Gothic Medium';
+	color: black;
+	font-size: 40px;
+}
+
+.text {
+	text-align: center;
+	color: black;
+	font-family: 'Franklin Gothic Medium';
+	font-size: 40px;
+}
+
+h3 {
+	margin-top: 0px;
+	text-align: center;
+	font-family: 'Franklin Gothic Medium';
+	color: rgb(218, 197, 13)
+}
+
+.corpo {
+	background-color: black;
+	inline-size: 50%;
+	border-width: 10px;
+	border-block-style: solid;
+	border-block-color: black;
+}
+
+.container {
+	background-color: white;		/*Define cor do efeito da passada do mouse sob a foto*/
+	position: relative;
+	width: 45%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	box-shadow: 12px 12px 0px 0px rgba(0,0,0,0.3);
+}
+
+form {
+	width: 500px;
+	margin: auto;
+	text-align: left;
+	line-height: 2.2;
+}
+
+.container2 {
+	position: relative;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	border: 20px solid white;
+	overflow: hidden;
+	box-shadow: 12px 12px 0px 0px rgba(0,0,0,0.3);
+}
+
+iframe.artigo {
+	position: relative;
+	width: 30cm;
+	height: 29.7cm;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	display: block;
+	box-shadow: 12px 12px 0px 0px rgba(0,0,0,0.3)/*
+	margin-top: 25px;
+	*/;
+}
+
+iframe.video {
+	position: relative;
+	width: 1280px;
+	height: 720px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	display: block;
+	box-shadow: 12px 12px 0px 0px rgba(0,0,0,0.3)
+}
+
+.image {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.image2 {
+	opacity: 1;
+	display: block;
+	width: 30%;
+	height: auto;
+	float: right;
+}
+/*
+.galeria {
+	opacity: 1;
+	display: block;
+	width: 20%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.linha {
+  /*display: -ms-flexbox; /* IE10 
+  display: flex;
+  /*-ms-flex-wrap: wrap; /* IE10 
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other 
+.coluna {
+  /*-ms-flex: 25%; /* IE10 
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 0px;
+}
+
+.coluna img {
+  vertical-align: middle;
+  width: 100%;
+}*/
+
+.galeria {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	background-color: white;
+	position: relative;
+	width: 45%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	box-shadow: 12px 12px 0px 0px rgba(0,0,0,0.3);
+}
+
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.container:hover .image {
+	opacity: 0.3;
+}
+
+
+
+.container:hover .middle {
+	opacity: 1;
+}
+
+/**/
+footer {
+	margin-top: 25px;
+	text-align: center;
+    font-weight: bold;
+	background-color: #007c36;
+	color: white;
+	padding: 5px;
+}
+
+.galeria a:hover:not(.active) {
+	opacity: 0.3;
+}
