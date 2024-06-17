@@ -51,8 +51,8 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>
-		<title>NOTEPET | Cuidados Básicos</title>
-		<link rel="icon" href="assets/images/icon.jpg" type="image/png">
+		<title>Centro Cultural Frei Civitella</title>
+		<link rel="icon" href="../assets/images/brasao.png" type="image/png">
 		<link href="../assets/styles/styles.css" type="text/css" rel="stylesheet">
 	</head>
 
