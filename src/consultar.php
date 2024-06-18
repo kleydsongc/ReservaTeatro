@@ -37,6 +37,7 @@
 	else {
 		$protocolo = '';
 		$tabela = array('', '', '', '', '', '', '', '', '', '');
+		$label = "Digite o código de protocolo gerado após sua solicitação de reserva:";
 	}
 
 	if(isset($_POST['protocolo'])) {
@@ -73,7 +74,7 @@
 
 		<form class = "form2" action="../src/consultar.php" method="POST">
 			<fieldset>
-				<label>Digite o código de protocolo informado após a solicitação de reserva:</label><br/>
+				<label> <?php echo $label; ?> </label><br/>
 				<input type="text" name="protocolo" id="protocolo" value = '<?php echo $protocolo; ?>' required><br/>
 				<input type="submit" name="consultar" value="CONSULTAR" id="consultar"><br/>
 

@@ -3,7 +3,7 @@ body {								/*Estilização tag body*/
 	font-family: arial;
 	font-size: 12;
 	line-height: 1.5;		/*define fonte dos elementos textuais pertencentes */
-	background-color: white;		/**/
+	background-color: #ecf4dc;		/**/
 	color: black;
 	text-align: justify;					/**/
 }
@@ -78,6 +78,13 @@ h3 {
 	border-block-color: black;
 }
 
+img {
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .container {
 	background-color: white;		/*Define cor do efeito da passada do mouse sob a foto*/
 	position: relative;
@@ -96,31 +103,18 @@ h3 {
 	margin-top: 25px;
 	border: 20px solid white;
 	overflow: hidden;
-	box-shadow: 12px 12px 0px 0px rgba(0,0,0,0.3);
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
+	background-color: white;
 }
 
-iframe.artigo {
+iframe {
 	position: relative;
-	width: 30cm;
-	height: 29.7cm;
+	width: 600px;
+	height: 450px;
 	margin-left: auto;
 	margin-right: auto;
-	overflow: hidden;
 	display: block;
-	box-shadow: 12px 12px 0px 0px rgba(0,0,0,0.3)/*
-	margin-top: 25px;
-	*/;
-}
-
-iframe.video {
-	position: relative;
-	width: 1280px;
-	height: 720px;
-	margin-left: auto;
-	margin-right: auto;
 	overflow: hidden;
-	display: block;
-	box-shadow: 12px 12px 0px 0px rgba(0,0,0,0.3)
 }
 
 .image {
@@ -178,6 +172,10 @@ form {
 	line-height: 1.5;
 }
 
+fieldset {
+	background-color: white;
+}
+
 input, textarea, select {
 	font-family: Arial;
 	font-size: 16px;
@@ -205,6 +203,7 @@ textarea {
 input[type=submit] {
 	display: block;
 	margin: auto;
+	margin-top: 15px;
 	background-color: #f4b719;
 	font-weight: bold;
 }
